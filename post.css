@@ -1,0 +1,124 @@
+.post-page {
+  background: var(--paper);
+}
+
+.post-site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 3.2vw;
+  border-bottom: 1px solid var(--line);
+}
+
+.post-back {
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--ink);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.post {
+  padding: clamp(5rem, 9vw, 9rem) 5vw;
+}
+
+.post-hero {
+  max-width: 1060px;
+  margin: 0 auto clamp(5rem, 9vw, 9rem);
+  text-align: center;
+}
+
+.post-hero h1 {
+  margin: 1.5rem auto 2rem;
+  font-family: var(--serif);
+  font-size: clamp(4rem, 9vw, 9rem);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -0.06em;
+}
+
+.post-deck {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  color: #5f645e;
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.45;
+}
+
+.post-hero time {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.post-body {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 1.7vw, 1.4rem);
+  line-height: 1.7;
+}
+
+.post-body > p:first-child::first-letter {
+  float: left;
+  margin: 0.08em 0.12em 0 0;
+  font-size: 4.7em;
+  line-height: 0.75;
+}
+
+.post-body h2 {
+  margin: 3.5rem 0 1rem;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.post-body blockquote {
+  margin: 3rem 0;
+  padding: 1.5rem 0 1.5rem 2rem;
+  border-left: 1px solid var(--sage);
+  font-size: 1.35em;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.post-body a {
+  border-bottom: 1px solid currentColor;
+}
+
+.post-body code {
+  font-size: 0.82em;
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 5vw;
+  color: var(--paper);
+  background: var(--ink);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 780px) {
+  .post-site-header {
+    padding: 1.2rem 1.3rem;
+  }
+
+  .post {
+    padding: 4.5rem 1.3rem;
+  }
+
+  .post-hero {
+    margin-bottom: 4.5rem;
+  }
+
+  .post-hero h1 {
+    font-size: clamp(3.6rem, 16vw, 6rem);
+  }
+}
