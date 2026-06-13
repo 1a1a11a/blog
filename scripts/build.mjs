@@ -105,7 +105,7 @@ const postTemplate = (post) => {
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="${escapeHtml(post.excerpt)}" />
-    <title>${escapeHtml(post.title)} — Field Notes</title>
+    <title>${escapeHtml(post.title)} — Juncheng Yang</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet" />
@@ -115,7 +115,7 @@ const postTemplate = (post) => {
   <body class="post-page">
     <a class="skip-link" href="#article">Skip to article</a>
     <header class="post-site-header">
-      <a class="wordmark" href="../index.html" aria-label="Field Notes, home">Field Notes<span>.</span></a>
+      <a class="wordmark" href="../index.html" aria-label="Juncheng Yang, home">Juncheng Yang<span>.</span></a>
       <a class="post-back" href="../index.html#writing">All writing ↙</a>
     </header>
     <main>
@@ -132,8 +132,8 @@ ${post.html}
       </article>
     </main>
     <footer class="post-footer">
-      <p>Field Notes · Juncheng</p>
-      <a href="../index.html#writing">Read another essay ↗</a>
+      <p>Juncheng Yang · Harvard SEAS</p>
+      <a href="../index.html#writing">Read another post ↗</a>
     </footer>
   </body>
 </html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The most useful systems I have built started not with a design, but with a long, uncomfortable look at how the existing system actually behaved in production." />
+    <title>Measurement-first systems research — Juncheng Yang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../post.css" />
+  </head>
+  <body class="post-page">
+    <a class="skip-link" href="#article">Skip to article</a>
+    <header class="post-site-header">
+      <a class="wordmark" href="../index.html" aria-label="Juncheng Yang, home">Juncheng Yang<span>.</span></a>
+      <a class="post-back" href="../index.html#writing">All writing ↙</a>
+    </header>
+    <main>
+      <article class="post" id="article">
+        <header class="post-hero">
+          <p class="eyebrow">Systems · 6 min read</p>
+          <h1>Measurement-first systems research</h1>
+          <p class="post-deck">The most useful systems I have built started not with a design, but with a long, uncomfortable look at how the existing system actually behaved in production.</p>
+          <time datetime="2026-04-08">April 8, 2026</time>
+        </header>
+        <div class="post-body">
+<p>It is tempting to start a systems project with an architecture diagram. I have
+learned to start somewhere less glamorous: traces, logs, and a question I
+cannot yet answer about how the current system behaves.</p>
+<h2>What the workload knows</h2>
+<p>Designs encode assumptions. Workloads encode reality. When the two disagree,
+the workload wins — usually at 3 a.m., in production, at scale. Spending weeks
+characterizing real request patterns before writing a line of the new system
+has repeatedly saved me from elegant solutions to problems that did not exist.</p>
+<p>Open, reproducible measurement is also how a field makes progress. A new
+eviction policy or storage layout is only believable if others can run it
+against the same workloads and see the same result. That conviction is why I
+invest so heavily in tools like <strong>libCacheSim</strong> — shared infrastructure lets
+the community argue about ideas instead of about benchmarks.</p>
+<h2>A loop, not a line</h2>
+<p>The research I am proudest of looks like a loop:</p>
+<ol>
+<li>Measure how the deployed system behaves under real load.</li>
+<li>Find the gap between that behavior and what is theoretically possible.</li>
+<li>Design the smallest mechanism that closes the gap.</li>
+<li>Deploy it, measure again, and discover the next gap.</li>
+</ol>
+<p>Each turn of the loop makes the next design less speculative. Over time the
+system stops being something you imposed on the workload and becomes something
+the workload taught you to build.</p>
+
+        </div>
+      </article>
+    </main>
+    <footer class="post-footer">
+      <p>Juncheng Yang · Harvard SEAS</p>
+      <a href="../index.html#writing">Read another post ↗</a>
+    </footer>
+  </body>
+</html>
