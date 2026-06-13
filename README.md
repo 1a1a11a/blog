@@ -141,6 +141,19 @@ npm run build
 npm run serve
 ```
 
+## Deployment
+
+Pushes to `main` automatically rebuild and deploy the site with GitHub
+Actions. The workflow is in `.github/workflows/deploy-pages.yml`.
+
+In the GitHub repository, open **Settings → Pages** and set **Source** to
+**GitHub Actions** if it is not selected already. The deployed site will be
+available at:
+
+```text
+https://1a1a11a.github.io/blog/
+```
+
 ## Edit or remove a post
 
 To edit a post, change its file in `content/posts/` and rebuild.
