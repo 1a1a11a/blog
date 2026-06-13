@@ -450,6 +450,28 @@ em {
   transform: translate(0.3rem, -0.3rem);
 }
 
+.publications .article-row {
+  border-top-color: var(--line);
+}
+
+.publications .article-row:last-child {
+  border-bottom-color: var(--line);
+}
+
+.publications .article-number,
+.publications .article-meta,
+.publications .article-date {
+  color: #545f4e;
+}
+
+.publications .article-copy > p:last-child {
+  color: var(--sage-dark);
+}
+
+.publications .writing-heading {
+  align-items: baseline;
+}
+
 .notes {
   background: var(--paper-deep);
 }
@@ -594,6 +616,14 @@ em {
   margin: 1rem 0 0;
   color: #c4c8c0;
   font-size: 0.72rem;
+}
+
+.contact-actions {
+  margin: 3rem 0 0;
+}
+
+.subscribe .text-link {
+  border-color: var(--paper);
 }
 
 .site-footer {

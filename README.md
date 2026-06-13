@@ -1,6 +1,8 @@
-# Field Notes
+# Juncheng Yang — academic homepage
 
-A responsive personal blog with Markdown-authored posts.
+A responsive personal/academic website with Markdown-authored posts. The
+homepage covers research, selected publications, writing, and contact; the
+`Writing` section is generated from Markdown files under `content/posts/`.
 
 ## Write a new post
 
@@ -47,7 +49,7 @@ The fields are:
 
 Posts are sorted newest first using `date`.
 
-The homepage currently has filters for `Technology`, `Life`, and `Craft`.
+The homepage currently has filters for `Research`, `Systems`, and `Advising`.
 Using another category will still generate the post, but it will only appear
 under the `All` filter until a matching button is added to `index.html`.
 
@@ -193,7 +195,11 @@ An image is broken:
 
 ## Personalize
 
-Update the name, biography, social links, and email address in `index.html`.
-Article listings are generated from Markdown, so edits inside the
-`<!-- posts:start -->` section will be overwritten during the next build. The
-generated hero image lives at `assets/coastal-dawn.png`.
+Edit `index.html` to update the name, bio, research areas, selected
+publications, social links, and email address. The static sections (hero,
+about, research, publications, contact) are edited directly. The `Writing`
+listing is generated from Markdown, so edits inside the `<!-- posts:start -->`
+section will be overwritten during the next build. Run `npm run build` after
+changing the post template branding in `scripts/build.mjs`. The hero
+background image lives at `assets/coastal-dawn.png` — swap it for your own
+(keep the same filename, or update the path in `styles.css`).

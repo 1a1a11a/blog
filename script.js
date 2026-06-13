@@ -59,9 +59,13 @@ document.querySelectorAll(".reveal").forEach((element) => {
   revealObserver.observe(element);
 });
 
-subscribeForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const email = new FormData(subscribeForm).get("email");
-  formMessage.textContent = `Thanks. The next field note will find its way to ${email}.`;
-  subscribeForm.reset();
-});
+if (subscribeForm) {
+  subscribeForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const email = new FormData(subscribeForm).get("email");
+    if (formMessage) {
+      formMessage.textContent = `Thanks — I'll be in touch at ${email}.`;
+    }
+    subscribeForm.reset();
+  });
+}

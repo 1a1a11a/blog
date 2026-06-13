@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Field Notes is Juncheng's personal journal about technology, craft, and a life observed closely."
+      content="Juncheng Yang is an Assistant Professor at Harvard SEAS building efficient, scalable, and reliable storage and machine-learning systems."
     />
-    <title>Field Notes — Juncheng's Journal</title>
+    <title>Juncheng Yang — Assistant Professor, Harvard SEAS</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,8 +21,8 @@
     <a class="skip-link" href="#main">Skip to content</a>
 
     <header class="site-header" data-header>
-      <a class="wordmark" href="#top" aria-label="Field Notes, home">
-        Field Notes<span>.</span>
+      <a class="wordmark" href="#top" aria-label="Juncheng Yang, home">
+        Juncheng Yang<span>.</span>
       </a>
       <button
         class="menu-toggle"
@@ -35,10 +35,11 @@
         <i aria-hidden="true"></i>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
-        <a href="#writing">Writing</a>
         <a href="#about">About</a>
-        <a href="#notes">Notes</a>
-        <a class="nav-contact" href="mailto:hello@example.com">Say hello</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#writing">Writing</a>
+        <a class="nav-contact" href="#contact">Contact</a>
       </nav>
     </header>
 
@@ -47,107 +48,213 @@
         <div class="hero-image" aria-hidden="true"></div>
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-content">
-          <p class="eyebrow hero-kicker" data-reveal>Juncheng's personal journal · Est. 2026</p>
+          <p class="eyebrow hero-kicker" data-reveal>
+            Juncheng Yang · Assistant Professor · Harvard SEAS
+          </p>
           <h1 id="hero-title" data-reveal>
-            Notes from the<br />
-            <em>long way around.</em>
+            Efficient systems for<br />
+            <em>data at scale.</em>
           </h1>
           <div class="hero-footer" data-reveal>
             <p>
-              Essays on technology, considered work,<br />
-              and paying attention to ordinary days.
+              Storage and machine-learning systems — cache management,<br />
+              reliable storage, and large-model inference.
             </p>
-            <a class="round-link" href="#writing" aria-label="Read the latest writing">
-              <span>Read</span>
+            <a class="round-link" href="#research" aria-label="See my research">
+              <span>Research</span>
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M12 5v14M6 13l6 6 6-6" />
               </svg>
             </a>
           </div>
         </div>
-        <p class="hero-index" aria-hidden="true">01 / JOURNAL</p>
+        <p class="hero-index" aria-hidden="true">01 / SYSTEMS</p>
       </section>
 
       <section class="intro section-pad" id="about" aria-labelledby="intro-title">
         <div class="section-label reveal">
-          <span>About this place</span>
+          <span>About</span>
           <span>02</span>
         </div>
         <div class="intro-grid">
           <p class="intro-aside reveal">
-            Based in New York<br />
-            Thinking everywhere
+            Harvard SEAS<br />
+            Allston, MA
           </p>
           <div>
             <h2 class="display-copy reveal" id="intro-title">
-              I write to make sense of <em>what changes</em> and to remember
-              what shouldn't.
+              I design systems that make large-scale data
+              <em>faster, cheaper,</em> and more reliable.
             </h2>
             <div class="intro-detail reveal">
               <p>
-                I'm Juncheng, a builder and lifelong student interested in the
-                space where technology meets human judgment.
+                I'm Juncheng Yang, an Assistant Professor in the Harvard John A.
+                Paulson School of Engineering and Applied Sciences. I received my
+                Ph.D. in Computer Science from Carnegie Mellon University, and my
+                work spans cache management, reliable storage, microservices, and
+                large-model inference — grounded in measurements of how real
+                systems behave at scale.
               </p>
-              <a class="text-link" href="mailto:hello@example.com">
-                More about me <span>↗</span>
+              <a class="text-link" href="https://juncheng.seas.harvard.edu/" rel="noreferrer">
+                Full bio &amp; CV <span>↗</span>
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="writing section-pad" id="writing" aria-labelledby="writing-title">
+      <section class="notes section-pad" id="research" aria-labelledby="research-title">
+        <div class="notes-heading reveal">
+          <p class="eyebrow">Research</p>
+          <h2 id="research-title">Building the systems<br /><em>behind the data.</em></h2>
+        </div>
+        <div class="note-grid">
+          <blockquote class="note note-large reveal">
+            <p>
+              My group designs storage and ML systems that are
+              <strong>efficient, scalable, and robust</strong> — from cache
+              eviction algorithms running on hundreds of clusters to the
+              infrastructure that serves today's largest models.
+            </p>
+            <footer>Efficiency · Scalability · Reliability</footer>
+          </blockquote>
+          <div class="note-stack">
+            <div class="note reveal">
+              <p>
+                Cache management &amp; in-memory key-value systems<br />
+                <strong>SIEVE · S3-FIFO · Segcache</strong>
+              </p>
+              <footer>Storage systems</footer>
+            </div>
+            <div class="note reveal">
+              <p>
+                ML systems, microservices, and reliable storage<br />
+                <strong>application–ML co-design &amp; inference at scale</strong>
+              </p>
+              <footer>Machine-learning systems</footer>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="publications section-pad" id="publications" aria-labelledby="publications-title">
         <div class="section-label reveal">
-          <span>Selected writing</span>
+          <span>Selected publications</span>
           <span>03</span>
         </div>
         <div class="writing-heading">
-          <h2 id="writing-title" class="reveal">Recent essays</h2>
-          <div class="filters reveal" aria-label="Filter articles">
+          <h2 id="publications-title" class="reveal">Selected work</h2>
+          <a class="text-link reveal" href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" rel="noreferrer">
+            All on Google Scholar <span>↗</span>
+          </a>
+        </div>
+        <div class="article-list">
+          <article class="article-row reveal">
+            <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" rel="noreferrer">
+              <div class="article-number">01</div>
+              <div class="article-copy">
+                <p class="article-meta">NSDI 2024 · Best Paper</p>
+                <h3>SIEVE: an efficient turn-key eviction algorithm for web caches</h3>
+                <p>A single FIFO queue with a lazy promotion bit — simpler than LRU, with higher hit ratios and better scalability. Adopted across many open-source systems.</p>
+              </div>
+              <div class="article-date">NSDI<br />2024</div>
+              <span class="article-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="article-row reveal">
+            <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" rel="noreferrer">
+              <div class="article-number">02</div>
+              <div class="article-copy">
+                <p class="article-meta">SOSP 2023</p>
+                <h3>FIFO queues are all you need for cache eviction</h3>
+                <p>S3-FIFO shows that three simple FIFO queues outperform eight state-of-the-art algorithms. Deployed in production at Google, VMware, and Redpanda.</p>
+              </div>
+              <div class="article-date">SOSP<br />2023</div>
+              <span class="article-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="article-row reveal">
+            <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" rel="noreferrer">
+              <div class="article-number">03</div>
+              <div class="article-copy">
+                <p class="article-meta">NSDI 2021 · Best Paper</p>
+                <h3>Segcache: a memory-efficient and scalable in-memory key-value cache</h3>
+                <p>A segment-structured design that cut memory waste and scaled to many cores. Deployed at Twitter and Momento.</p>
+              </div>
+              <div class="article-date">NSDI<br />2021</div>
+              <span class="article-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+
+          <article class="article-row reveal">
+            <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" rel="noreferrer">
+              <div class="article-number">04</div>
+              <div class="article-copy">
+                <p class="article-meta">Open-source tooling</p>
+                <h3>libCacheSim: high-performance cache simulation and analysis</h3>
+                <p>A library for reproducible caching research, used by roughly a hundred research institutes and companies.</p>
+              </div>
+              <div class="article-date">Tool<br />&amp; data</div>
+              <span class="article-arrow" aria-hidden="true">↗</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="writing section-pad" id="writing" aria-labelledby="writing-title">
+        <div class="section-label reveal">
+          <span>Writing &amp; notes</span>
+          <span>04</span>
+        </div>
+        <div class="writing-heading">
+          <h2 id="writing-title" class="reveal">Recent writing</h2>
+          <div class="filters reveal" aria-label="Filter posts">
             <button class="active" type="button" data-filter="all">All</button>
-            <button type="button" data-filter="technology">Technology</button>
-            <button type="button" data-filter="life">Life</button>
-            <button type="button" data-filter="craft">Craft</button>
+            <button type="button" data-filter="research">Research</button>
+            <button type="button" data-filter="systems">Systems</button>
+            <button type="button" data-filter="advising">Advising</button>
           </div>
         </div>
 
         <div class="article-list">
           <!-- posts:start -->
-          <article class="article-row reveal" id="article-01" data-category="technology">
-            <a href="posts/interfaces-should-leave-some-room.html" aria-label="Read Interfaces should leave some room">
+          <article class="article-row reveal" id="article-01" data-category="research">
+            <a href="posts/fifo-is-all-you-need.html" aria-label="Read Why FIFO is (almost) all you need for cache eviction">
               <div class="article-number">01</div>
               <div class="article-copy">
-                <p class="article-meta">Technology · 8 min read</p>
-                <h3>Interfaces should leave some room</h3>
-                <p>On resisting software that anticipates everything, and why a little friction can return agency to the person using it.</p>
+                <p class="article-meta">Research · 8 min read</p>
+                <h3>Why FIFO is (almost) all you need for cache eviction</h3>
+                <p>A simple first-in-first-out queue, given one quick second chance, beats far more complex eviction policies on real workloads. Here is the intuition behind S3-FIFO and SIEVE.</p>
               </div>
-              <div class="article-date">May 28<br />2026</div>
+              <div class="article-date">May 20<br />2026</div>
               <span class="article-arrow" aria-hidden="true">↗</span>
             </a>
           </article>
 
-          <article class="article-row reveal" id="article-02" data-category="life">
-            <a href="posts/a-season-for-walking-slowly.html" aria-label="Read A season for walking slowly">
+          <article class="article-row reveal" id="article-02" data-category="systems">
+            <a href="posts/measurement-first-systems-research.html" aria-label="Read Measurement-first systems research">
               <div class="article-number">02</div>
               <div class="article-copy">
-                <p class="article-meta">Life · 5 min read</p>
-                <h3>A season for walking slowly</h3>
-                <p>Field notes from three weeks without a destination, and the details that only appeared after I stopped hurrying.</p>
+                <p class="article-meta">Systems · 6 min read</p>
+                <h3>Measurement-first systems research</h3>
+                <p>The most useful systems I have built started not with a design, but with a long, uncomfortable look at how the existing system actually behaved in production.</p>
               </div>
-              <div class="article-date">Apr 12<br />2026</div>
+              <div class="article-date">Apr 08<br />2026</div>
               <span class="article-arrow" aria-hidden="true">↗</span>
             </a>
           </article>
 
-          <article class="article-row reveal" id="article-03" data-category="craft">
-            <a href="posts/taste-is-a-practice.html" aria-label="Read Taste is a practice">
+          <article class="article-row reveal" id="article-03" data-category="advising">
+            <a href="posts/advice-for-prospective-students.html" aria-label="Read Advice for prospective systems PhD students">
               <div class="article-number">03</div>
               <div class="article-copy">
-                <p class="article-meta">Craft · 7 min read</p>
-                <h3>Taste is a practice</h3>
-                <p>Good judgment isn't mysterious. It is built through attention, comparison, and the courage to revise.</p>
+                <p class="article-meta">Advising · 5 min read</p>
+                <h3>Advice for prospective systems PhD students</h3>
+                <p>I am recruiting students who want to build real systems for storage, databases, and machine learning. Here is how I think about the work and what I look for.</p>
               </div>
-              <div class="article-date">Mar 03<br />2026</div>
+              <div class="article-date">Mar 02<br />2026</div>
               <span class="article-arrow" aria-hidden="true">↗</span>
             </a>
           </article>
@@ -155,64 +262,32 @@
         </div>
       </section>
 
-      <section class="notes section-pad" id="notes" aria-labelledby="notes-title">
-        <div class="notes-heading reveal">
-          <p class="eyebrow">The commonplace book</p>
-          <h2 id="notes-title">Small observations,<br /><em>kept close.</em></h2>
-        </div>
-        <div class="note-grid">
-          <blockquote class="note note-large reveal">
-            <p>
-              “The work is not to predict the future. The work is to notice the
-              present clearly enough that the future has somewhere honest to
-              begin.”
-            </p>
-            <footer>Notebook, February 2026</footer>
-          </blockquote>
-          <div class="note-stack">
-            <div class="note reveal">
-              <p>
-                Currently reading<br />
-                <strong>The Peregrine</strong><br />
-                by J. A. Baker
-              </p>
-              <footer>On the nightstand</footer>
-            </div>
-            <div class="note reveal">
-              <p>
-                A useful question:<br />
-                <strong>What would this look like if it were quiet?</strong>
-              </p>
-              <footer>Prompt for making</footer>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="subscribe section-pad" aria-labelledby="subscribe-title">
+      <section class="subscribe section-pad" id="contact" aria-labelledby="contact-title">
         <div class="subscribe-inner reveal">
-          <p class="eyebrow">Occasional letters</p>
-          <h2 id="subscribe-title">New essays, <em>without the noise.</em></h2>
+          <p class="eyebrow">Prospective students &amp; collaborators</p>
+          <h2 id="contact-title">I'm <em>recruiting students.</em></h2>
           <p class="subscribe-copy">
-            A thoughtful note once or twice a month. No feeds to refresh.
+            If you're excited about storage systems, databases, or machine-learning
+            systems, I'd love to hear from you. Tell me about a system you've built
+            or a measurement that surprised you.
           </p>
-          <form class="subscribe-form" data-subscribe-form>
-            <label class="sr-only" for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="Your email address" required />
-            <button type="submit">Join the list <span>↗</span></button>
-          </form>
-          <p class="form-message" role="status" data-form-message></p>
+          <p class="contact-actions">
+            <a class="text-link" href="mailto:juncheng@seas.harvard.edu">
+              Email me <span>↗</span>
+            </a>
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <a class="wordmark footer-mark" href="#top">Field Notes<span>.</span></a>
-      <p>Written and made by Juncheng<br />New York · 2026</p>
+      <a class="wordmark footer-mark" href="#top">Juncheng Yang<span>.</span></a>
+      <p>Assistant Professor<br />Harvard SEAS · Allston, MA</p>
       <div class="footer-links">
-        <a href="https://github.com/" rel="noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/" rel="noreferrer">LinkedIn</a>
-        <a href="mailto:hello@example.com">Email</a>
+        <a href="https://scholar.google.com/citations?user=P8HaQPoAAAAJ" rel="noreferrer">Google Scholar</a>
+        <a href="https://github.com/1a1a11a" rel="noreferrer">GitHub</a>
+        <a href="https://x.com/1a1a11a" rel="noreferrer">Twitter</a>
+        <a href="mailto:juncheng@seas.harvard.edu">Email</a>
       </div>
       <a class="back-top" href="#top">Back to top ↑</a>
     </footer>
