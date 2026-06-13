@@ -461,7 +461,7 @@ em {
 .publications .article-number,
 .publications .article-meta,
 .publications .article-date {
-  color: var(--sage);
+  color: #545f4e;
 }
 
 .publications .article-copy > p:last-child {
